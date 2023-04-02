@@ -1,4 +1,23 @@
 HOST: '127.0.0.1'
 PORT: 7900
 RECV_BUFFER_SIZE: 1024
-CLIENT_APP_DIRECTORY: './src/client_spa_app'  
+CLIENT_APP_DIRECTORY: './src/client_spa_app'
+CLIENT_APP_DOCUMENT_NAME: 'app.html'
+
+# server:
+#   config:
+#     host: '127.0.0.1'
+#     port: 7900
+#     accept_buffer_size: 1024
+#     client_app_dirpath: ''
+#     client_app_document: ''
+#   wipe_list:
+#     -
+#   locals:
+#     -
+  
+#   admin:
+#     exists: True
+#     port: 7901
+#     locals:
+    

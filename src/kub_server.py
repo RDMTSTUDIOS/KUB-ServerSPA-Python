@@ -3,15 +3,15 @@ from select import select
 from sys import exit
 
 from src.helpers.config_loader import server_config_loader
-from src.server_cli.messages import klog
+from src.helpers.klogs import klog
 from src.helpers.verify_client_app import verify_client_app
 from src.helpers.request_handler import create_request_handler
 
 class KUBServer:
 
     def __init__(self) -> None:
-
         server_config = server_config_loader()
+        
         self.__port = server_config.get('PORT')
         self.__host = server_config.get('HOST')
         self.__receive_buffer_size = server_config.get('RECV_BUFFER_SIZE', 2048)
